@@ -138,7 +138,6 @@ def main(args=None):
         mByte_slot = plc_control.read_area(RESD_AREA_DB, START_ADDR_SLOT_ID, 0, LENGTH)
         plc_slot_id = int(get_byte(mByte_slot, 0))
         # contl.get_logger().info(f"Current Slot ID: {plc_slot_id}")
-        contl.get_logger().info(f"This is mbyte Slot ID: {mByte_slot}")
 
 
         if wait_for_go_home:  # if(not contl._reached_home):
